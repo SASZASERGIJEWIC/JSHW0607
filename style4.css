@@ -1,0 +1,24 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.small-images {
+  display: flex;
+  gap: 10px;
+}
+
+.small-images img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.large-image img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 50px;
+  border: 2px solid #ccc;
+}

@@ -1,0 +1,36 @@
+ <!-- В JS объявлен массив с ссылками на картинки. На основе этого массива 
+ формируется множество маленьких картинок в верхней части интерфейса. 
+ При нажатии на одну из картинок забирается ссылка на эту картинку и 
+ в нижней части интерфейса отображается в большем размере. Так, пользователь, 
+ нажимая на маленькие картинки видит их отображение в большем размере.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="small-images">
+            <img src="4.1.jpg" alt="Image 1" onclick="showLargeImage('4.1.jpg')">
+            <img src="4.2.jpg" alt="Image 2" onclick="showLargeImage('4.2.jpg')">
+            <img src="4.3.jpg" alt="Image 2" onclick="showLargeImage('4.3.jpg')">
+
+        </div>
+        <div class="large-image">
+            <img id="largeImage" src="" alt="Large Image">
+        </div>
+    </div>
+
+    <script>
+        function showLargeImage(imageUrl) {
+    const largeImageElement = document.getElementById('largeImage');
+    largeImageElement.src = imageUrl;
+}
+    </script>
+</body>
+</html>
